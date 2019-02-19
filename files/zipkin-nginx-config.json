@@ -1,4 +1,4 @@
 {
-  "service_name": "nginx",
+  "service_name": "zipkin-nginx",
   "sample_rate": 0
 }
