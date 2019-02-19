@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  zipkin-nginx:
+    image: distracing/zipkin-nginx:1.12
+    ports:
+    - 80:80
+    volumes:
+      - ./files/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./files/zipkin-nginx-config.json:/etc/zipkin-nginx/zipkin-nginx-config.json:ro
